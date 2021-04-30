@@ -21,7 +21,7 @@
  </tr>
  <tr>
     <td>✔ BEM Methodology</td>
-    <td>✔ 🚫 Code Redundancy</td>
+    <td>🚫 Code Redundancy</td>
  </tr>
 </table>
 
