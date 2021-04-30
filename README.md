@@ -1,7 +1,6 @@
 <b>Guess My Number: Try your luck today!</b>
 
-2D Pixel Design where I practice my first grid and js project,<br>
-consists:  
+2D Pixel Design where I practice my first grid and js project, consists:  
 
 ✔ Grid<br>
 ✔ Flexbox<br>
