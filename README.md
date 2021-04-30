@@ -21,7 +21,7 @@
  </tr>
  <tr>
     <td>✔ BEM Methodology</td>
-    <td>✔ Reusable Variables</td>
+    <td>✔ 🚫 Code Redundancy</td>
  </tr>
 </table>
 
