@@ -21,6 +21,7 @@
  </tr>
  <tr>
     <td>✔ BEM Methodology</td>
+    <td>✔ Reusable Variables</td>
  </tr>
 </table>
 
