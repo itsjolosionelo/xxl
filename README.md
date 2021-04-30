@@ -6,6 +6,7 @@ consists:
 ✔ Grid<br>
 ✔ Flexbox<br>
 ✔ SASS<br>
+✔ Fluid Typography<br>
 ✔ BEM Methodology<br>
 ✔ 7-1 CSS Architecture<br>
 ✔ Animations/Transitions<br> 
