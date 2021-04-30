@@ -6,15 +6,21 @@
  <tr>
     <td>✔ Grid</td>
     <td>✔ Flexbox</td>
-    <td>✔ SASS</td>
-    <td>✔ Fluid Typography</td>
-    <td>✔ BEM Methodology</td>
  </tr>
  <tr>
     <td>✔ 7-1 CSS Architecture</td>
     <td>✔ Animations/Transitions</td>
+ </tr>
+ <tr>
+    <td>✔ SASS</td>
+    <td>✔ Fluid Typography</td>
+ </tr>
+ <tr>
     <td>✔ Fully Responsive</td>
     <td>✔ JavaScript</td>
+ </tr>
+ <tr>
+    <td>✔ BEM Methodology</td>
  </tr>
 </table>
 
