@@ -1,11 +1,12 @@
-#Trillo: Hotel Booking App
+<b>Guess My Number: Try your luck today!</b>
 
-Some simple design where I practice web's important foundation, 
+2D Pixel Design where I practice my first grid and js project
 consists:  
 
+✔ Grid<br>
 ✔ Flexbox<br>
 ✔ SASS<br>
 ✔ BEM Methodology<br>
 ✔ 7-1 CSS Architecture<br>
-✔ Simple Animations/Transitions<br> 
+✔ Animations/Transitions<br> 
 ✔ Fully Responsive
