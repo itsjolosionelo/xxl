@@ -159,25 +159,37 @@ body {
           animation: shadow-leave 0.3s both;
 }
 
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
 body {
   display: grid;
   place-content: center;
-  background: #f0f0f0;
+  position: relative;
 }
 body .number {
   background: #f0f0f0;
   color: #111111;
-  display: flex;
-  position: relative;
   z-index: 1;
 }
 body .number--item {
   padding: clamp(2rem, 3vw, 3rem);
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
 }
 body .number:hover {
   -webkit-animation: jello-horizontal 0.9s both;
           animation: jello-horizontal 0.9s both;
+}
+@media (max-width: 360px) {
+  body .number {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .parent {
@@ -195,71 +207,139 @@ body .number:hover {
   justify-content: center;
   align-items: center;
 }
-.parent .div1 {
+@media (max-width: 360px) {
+  .parent {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr) 0.5fr repeat(7, 1fr);
+  }
+}
+
+.dashboard {
   grid-area: 1/1/4/6;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr 0.5fr 1fr 0.5fr;
 }
-.parent .div1 > * {
-  background: #111111;
+.dashboard > * {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.parent .div1 .div3 {
+.dashboard--btn {
   grid-area: 1/1/2/3;
   position: relative;
 }
-.parent .div1 .div3 .again {
+.dashboard--btn .again {
   position: absolute;
   left: 8rem;
 }
-.parent .div1 .div4 {
+@media (max-width: 360px) {
+  .dashboard--btn .again {
+    position: relative;
+    left: 0;
+    width: 20rem;
+    z-index: 1;
+  }
+}
+@media (max-width: 360px) {
+  .dashboard--btn {
+    grid-area: 2/1/2/4;
+    width: 100%;
+    position: absolute;
+    padding: 2rem;
+    top: 40.8rem;
+    z-index: 2;
+  }
+}
+.dashboard--instruction {
   grid-area: 1/4/2/6;
 }
-.parent .div1 .div5 {
-  grid-area: 3/1/4/6;
-  font-size: clamp(2rem, 5vw, 4rem);
+@media (max-width: 360px) {
+  .dashboard--instruction {
+    grid-area: 1/1/2/4;
+    width: 80%;
+    place-self: center;
+    text-align: center;
+  }
 }
-.parent .div2 {
+.dashboard--title {
+  grid-area: 3/1/4/6;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+@media (max-width: 360px) {
+  .dashboard--title {
+    grid-area: 2/1/3/4;
+    width: 80%;
+    place-self: center;
+    text-align: center;
+    word-spacing: -1rem;
+  }
+}
+@media (max-width: 360px) {
+  .dashboard {
+    grid-area: 1/1/4/4;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr) 0.5fr;
+  }
+}
+
+.user {
   grid-area: 4/1/7/6;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
-.parent .div2 > * {
+.user > * {
   background: #111111;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
 }
-.parent .div2 .div6 {
+.user__content {
   grid-area: 1/3/4/6;
   place-self: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  padding-left: 20rem;
+  padding-left: 35rem;
 }
-.parent .div2 .div7 {
+@media (max-width: 360px) {
+  .user__content--label {
+    display: none;
+  }
+}
+@media (max-width: 360px) {
+  .user__content {
+    grid-area: 8/1/10/4;
+    padding: 0;
+    align-items: center;
+    border-top: 1rem solid #f0f0f0;
+  }
+}
+.user__ground {
   grid-area: 1/1/4/3;
 }
-.parent .div2 .div7 .playground {
+.user__ground-play {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   width: 20rem;
   height: 20rem;
 }
-.parent .div2 .div7 .playground .input-box {
+@media (max-width: 360px) {
+  .user__ground {
+    grid-area: 1/1/8/4;
+    padding-bottom: 5rem;
+  }
+}
+.user__input-box {
   display: flex;
   width: 100%;
   height: 100%;
 }
-.parent .div2 .div7 .playground .input-box .guess {
+.user--guess {
   border: none;
   height: 10rem;
   width: 100%;
@@ -269,16 +349,16 @@ body .number:hover {
      -moz-appearance: textfield;
           appearance: textfield;
   text-align: center;
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-family: "Press Start 2P", sans-serif;
 }
-.parent .div2 .div7 .playground .input-box .adjust-box {
+.user__adjust-box {
   height: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.parent .div2 .div7 .playground .input-box .adjust-box * {
+.user__adjust-box * {
   height: 5rem;
   width: 5rem;
   display: flex;
@@ -286,4 +366,12 @@ body .number:hover {
   align-items: center;
   border: solid 0.4rem #f0f0f0;
   cursor: pointer;
+}
+@media (max-width: 360px) {
+  .user {
+    grid-area: 4/1/11/4;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    position: relative;
+  }
 }

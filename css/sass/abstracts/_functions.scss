@@ -10,3 +10,10 @@
 @function c($color) {
     @return map-get($colors, $color);
 }
+
+
+////////////////////////////////////////////////
+//FONT-SIZES
+@function f($size) {
+    @return map-get($font-sizes, $size);
+}

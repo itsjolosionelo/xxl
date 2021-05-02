@@ -5,3 +5,7 @@ $breakpoints: (phone: 360px,
     tablet: 768px,
     desktop: 1366px,
 );
+
+$font-sizes:(large: clamp(2.5rem, 5vw, 4rem),
+    medium: clamp(1.5rem, 3vw, 2rem),
+);

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Simple guessing game and try to beat your high score.">
+    <meta name="description" content="Try your luck today, with this simple guessing game! Can you beat your own high score?">
 
     <link rel="stylesheet" href="./css/sass/main.css">
     <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
@@ -23,41 +23,44 @@
         <h1 class="number--item">?</h1>
     </div>
 
-    <div class="parent">
+    <main class="parent">
 
-        <div class="div1">
+        <section class="dashboard">
 
-            <div class="div3"><button class="btn again">Again!</button></div>
-            <div class="div4">(Between 1 and 20)</div>
-            <div class="div5">Guess My Number!</div>
+            <div class="dashboard--btn">
+                <button class="btn again">Again!</button>
+            </div>
+            <p class="dashboard--instruction">(Between 1 and 20)</p>
+            <h1 class="dashboard--title">Guess My Number!</h1>
 
-        </div>
+        </section>
 
-        <div class="div2">
+        <section class="user">
 
-            <div class="div6">
-                <p class="label">Start guessing...</p>
-                <div class="score-box">
-                    <p class="score">💯 Score: 20</p>
-                    <p class="highscore">🏅 Highscore: 0</p>
+            <div class="user__content">
+                <p class="user__content--label">Start guessing...</p>
+                <div class="user__content--score-box">
+                    <p class="user__content--score-box--score">💯 Score: 20</p>
+                    <p class="user__content--score-box--highscore">🏅 Highscore: 0</p>
                 </div>
             </div>
 
-            <div class="div7">
-                <div class="playground">
-                    <div class="input-box">
-                        <input class="guess" type="number">
-                        <div class="adjust-box">
-                            <div class="increment">🡅</div>
-                            <div class="decrement">🡇</div>
+            <div class="user__ground">
+                <div class="user__ground-play">
+                    <div class="user__input-box">
+                        <input class="user--guess" type="number">
+                        <div class="user__adjust-box">
+                            <div class="user__adjust-box--increment">🡅</div>
+                            <div class="user__adjust-box--decrement">🡇</div>
                         </div>
                     </div>
                     <button class="btn check">Check!</button>
                 </div>
             </div>
 
-        </div>
-    </div>
+        </section>
+
+    </main>
 
 </body>
 
