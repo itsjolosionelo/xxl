@@ -1,6 +1,6 @@
-<b>Guess My Number: Try your luck today!</b>
+# Guess My Number: Try your luck today!
 
-2D Pixel Design where I continue to develop my front-end skills, consists:  
+#### 2D Pixel Design where I continue to develop my front-end skills, consists:  
 
 <table border="0">
  <tr>
