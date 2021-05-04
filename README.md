@@ -1,4 +1,4 @@
-## Guess My Number: Try your luck today!
+# Guess My Number: Try your luck today!
 
 #### 2D Pixel Design where I continue to develop my front-end skills, consists:  
 
