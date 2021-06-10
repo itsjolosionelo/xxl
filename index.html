@@ -2,66 +2,178 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="Try your luck today, with this simple guessing game! Can you beat your own high score?">
-
-    <link rel="stylesheet" href="./css/sass/main.css">
-    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
-    <script src="script.js"></script>
-
-    <title>Guess My Number</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>XXL</title>
 </head>
 
 <body>
 
-    <div class="number">
-        <h1 class="number--item">?</h1>
+  <div class="overlay first"></div>
+  <div class="overlay second"></div>
+  <div class="overlay third"></div>
+
+  <div class="wrapper">
+
+    <div class="nav">
+      <div class="logo"><img src="./img/xxl-logo.jpg" alt=""></div>
+      <div class="menu-links">
+        <ul>
+          <li>Home</li>
+          <li>News</li>
+          <li>Music</li>
+          <li>Videos</li>
+          <li>Shop</li>
+        </ul>
+      </div>
+      <div class="search"><i class="fa fa-search"></i></div>
+      <div class="cart"><i class="fa fa-shopping-cart"></i></div>
+    </div>
+  </div>
+
+  <hr class="border-bottom">
+
+  <div class="content">
+
+    <div class="text">
+      <p class="subtitle">The Authority In</p>
+      <h1 class="title">
+        <span>Hip-Hop <br> Culture</span>
+      </h1>
+      <p class="desc">XXL is the cultural phenomenon surrounding <br> Hip Hop and Rap culture.</p>
+      <a href="#" class="readmore">Scroll For More</a>
     </div>
 
-    <main class="parent">
+    <div class="img-1"></div>
 
-        <section class="dashboard">
+    <div class="slider">
+      <div class="arrows">
+        <ul>
+          <li><i class="fa fa-arrow-left"></i></li>
+          <li><i class="fa fa-arrow-right"></i></li>
+        </ul>
+      </div>
+      <div class="pages"><span>01</span>/04</div>
+    </div>
 
-            <div class="dashboard--btn">
-                <button class="btn again">Again!</button>
-            </div>
-            <p class="dashboard--instruction">(Between 1 and 20)</p>
-            <h1 class="dashboard--title">Guess My Number!</h1>
+    <div class="img-2"></div>
 
-        </section>
+    <div class="img-3"></div>
 
-        <section class="user">
+  </div>
 
-            <div class="user__content">
-                <p class="user__content--label">Start guessing...</p>
-                <div class="user__content--score-box">
-                    <p class="user__content--score-box--score">💯 Score: 20</p>
-                    <p class="user__content--score-box--highscore">🏅 Highscore: 0</p>
-                </div>
-            </div>
 
-            <div class="user__ground">
-                <div class="user__ground-play">
-                    <div class="user__input-box">
-                        <input class="user--guess" type="number">
-                        <div class="user__adjust-box">
-                            <div class="user__adjust-box--increment">🡅</div>
-                            <div class="user__adjust-box--decrement">🡇</div>
-                        </div>
-                    </div>
-                    <button class="btn check">Check!</button>
-                </div>
-            </div>
+  <script>
 
-        </section>
+    TweenMax.from('.logo', 1, {
+      delay: 1.2,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
 
-    </main>
+    TweenMax.staggerFrom('.menu-links ul li', 1, {
+      delay: 1.2,
+      opacity: 0,
+      x: -20,
+      ease: Power4.easeInOut
+    }, 0.08)
 
+    TweenMax.from('.search', 1, {
+      delay: 1.6,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.cart', 1, {
+      delay: 1.8,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.border-bottom', 1, {
+      delay: 1.4,
+      width: '100%',
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.subtitle', 1, {
+      delay: 2.8,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.title', 1, {
+      delay: 2.2,
+      width: '100%',
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.desc', 1, {
+      delay: 2.8,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.readmore', 1, {
+      delay: 2.8,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.slider', 1, {
+      delay: 3,
+      opacity: 1,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.img-1', 1, {
+      delay: 2.2,
+      width: '450px',
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.img-2', 1, {
+      delay: 2.2,
+      width: '300px',
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.img-3', 1, {
+      delay: 2.2,
+      width: '300px',
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.first', 1.5, {
+      delay: .2,
+      left: '-100%',
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.second', 1.5, {
+      delay: .4,
+      left: '-100%',
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.third', 1.5, {
+      delay: .6,
+      left: '-100%',
+      ease: Expo.easeInOut
+    })
+
+  </script>
 </body>
 
 </html>
