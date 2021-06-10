@@ -1,28 +1,14 @@
-# Guess My Number: Try your luck today!
+# XXL
 
-#### 2D Pixel Design where I continue to develop my front-end skills, consists:  
+#### Landing Page where I continue to practice JS's Libraries, consists:  
 
 <table border="0">
  <tr>
-    <td>✔ Grid</td>
-    <td>✔ Flexbox</td>
+    <td>✔ GSAP</td>
+    <td>✔ Media Queries</td>
  </tr>
  <tr>
-    <td>✔ 7-1 CSS Architecture</td>
-    <td>✔ Animations/Transitions</td>
- </tr>
- <tr>
-    <td>✔ SASS</td>
-    <td>✔ Fluid Typography</td>
- </tr>
- <tr>
-    <td>✔ Fully Responsive</td>
-    <td>✔ JavaScript</td>
- </tr>
- <tr>
-    <td>✔ BEM Methodology</td>
-    <td>🚫 Code Redundancy</td>
+    <td>✔ Landing Page</td>
+    <td>✔ Asymmetric UI</td>
  </tr>
 </table>
-
-
