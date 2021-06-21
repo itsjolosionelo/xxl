@@ -12,7 +12,7 @@
     <td>✔ Asymmetric UI</td>
  </tr>
   <tr>
-    <th colspan="2">🚫 Not Optimized for Mobile</th>
+    <th colspan="2">🚫 Optimized for Mobile</th>
  </tr>
 </table>
 
