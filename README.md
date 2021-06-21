@@ -11,6 +11,9 @@
     <td>✔ Landing Page</td>
     <td>✔ Asymmetric UI</td>
  </tr>
+  <tr>
+    <th colspan="2">🚫 Not Optimized for Mobile</th>
+ </tr>
 </table>
 
 #### Preview: [XXL](https://xxl.netlify.app/)
